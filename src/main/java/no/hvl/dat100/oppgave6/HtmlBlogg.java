@@ -18,7 +18,19 @@ public class HtmlBlogg extends Blogg {
 	
 	@Override
 	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
+		//TODO
+		String html=HTMLPREFIX;
+		int antall=super.getAntall();
+		for(int i=0;i<antall;i++) {
+			html+=super.getSamling()[i].toHTML();
+			if(i!=antall-1) {
+				html+="\n<hr>\n";
+			}
+		}
+		html+=HTMLPOSTFIX;
+		
+		return html;
+		
 		
 	}
 }

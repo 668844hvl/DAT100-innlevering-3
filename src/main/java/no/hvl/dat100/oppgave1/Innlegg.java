@@ -94,11 +94,11 @@ public abstract class Innlegg {
 	}
 
 	public boolean erLik(Innlegg innlegg) {
-		
+
 		// TODO
-		if(this.id==innlegg.getId()) {
-			return true; 
-		}else {
+		if (this.id == innlegg.getId()) {
+			return true;
+		} else {
 			return false;
 		}
 	}
@@ -114,7 +114,8 @@ public abstract class Innlegg {
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
 
-		throw new UnsupportedOperationException(TODO.method());
-
+		// TODO
+		return "<h2>" + bruker + "@" + dato + " [" + likes + "]</h2>\n";
+	
 	}
 }
